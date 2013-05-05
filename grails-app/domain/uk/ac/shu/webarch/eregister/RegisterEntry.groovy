@@ -1,13 +1,10 @@
 package uk.ac.shu.webarch.eregister
 
-class Enrollment {
+class RegisterEntry {
 
-String studentName
-
+Date date
 Student student
-RegClass regClass
-
-
+RegistrationSheet registrationSheet
 
     static constraints = {
     }
