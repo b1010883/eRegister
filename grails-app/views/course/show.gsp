@@ -43,29 +43,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${courseInstance?.courseNumber}">
-				<li class="fieldcontain">
-					<span id="courseNumber-label" class="property-label"><g:message code="course.courseNumber.label" default="Course Number" /></span>
-					
-						<span class="property-value" aria-labelledby="courseNumber-label"><g:fieldValue bean="${courseInstance}" field="courseNumber"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${courseInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="course.name.label" default="Name" /></span>
 					
 						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${courseInstance}" field="name"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${courseInstance?.startDate}">
-				<li class="fieldcontain">
-					<span id="startDate-label" class="property-label"><g:message code="course.startDate.label" default="Start Date" /></span>
-					
-						<span class="property-value" aria-labelledby="startDate-label"><g:formatDate date="${courseInstance?.startDate}" /></span>
 					
 				</li>
 				</g:if>

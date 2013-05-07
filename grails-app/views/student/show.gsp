@@ -34,15 +34,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${studentInstance?.enrollment}">
-				<li class="fieldcontain">
-					<span id="enrollment-label" class="property-label"><g:message code="student.enrollment.label" default="Enrollment" /></span>
-					
-						<span class="property-value" aria-labelledby="enrollment-label"><g:link controller="enrollment" action="show" id="${studentInstance?.enrollment?.id}">${studentInstance?.enrollment?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${studentInstance?.studentAddress}">
 				<li class="fieldcontain">
 					<span id="studentAddress-label" class="property-label"><g:message code="student.studentAddress.label" default="Student Address" /></span>

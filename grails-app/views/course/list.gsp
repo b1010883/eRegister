@@ -26,11 +26,7 @@
 					
 						<g:sortableColumn property="courseCode" title="${message(code: 'course.courseCode.label', default: 'Course Code')}" />
 					
-						<g:sortableColumn property="courseNumber" title="${message(code: 'course.courseNumber.label', default: 'Course Number')}" />
-					
 						<g:sortableColumn property="name" title="${message(code: 'course.name.label', default: 'Name')}" />
-					
-						<g:sortableColumn property="startDate" title="${message(code: 'course.startDate.label', default: 'Start Date')}" />
 					
 					</tr>
 				</thead>
@@ -40,11 +36,7 @@
 					
 						<td><g:link action="show" id="${courseInstance.id}">${fieldValue(bean: courseInstance, field: "courseCode")}</g:link></td>
 					
-						<td>${fieldValue(bean: courseInstance, field: "courseNumber")}</td>
-					
 						<td>${fieldValue(bean: courseInstance, field: "name")}</td>
-					
-						<td><g:formatDate date="${courseInstance.startDate}" /></td>
 					
 					</tr>
 				</g:each>

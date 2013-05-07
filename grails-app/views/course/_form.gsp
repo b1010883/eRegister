@@ -27,27 +27,11 @@
 	<g:textField name="courseCode" value="${courseInstance?.courseCode}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'courseNumber', 'error')} required">
-	<label for="courseNumber">
-		<g:message code="course.courseNumber.label" default="Course Number" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:field name="courseNumber" type="number" value="${courseInstance.courseNumber}" required=""/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'name', 'error')} ">
 	<label for="name">
 		<g:message code="course.name.label" default="Name" />
 		
 	</label>
 	<g:textField name="name" value="${courseInstance?.name}"/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'startDate', 'error')} required">
-	<label for="startDate">
-		<g:message code="course.startDate.label" default="Start Date" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:datePicker name="startDate" precision="day"  value="${courseInstance?.startDate}"  />
 </div>
 

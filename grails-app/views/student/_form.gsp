@@ -19,14 +19,6 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'enrollment', 'error')} required">
-	<label for="enrollment">
-		<g:message code="student.enrollment.label" default="Enrollment" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="enrollment" name="enrollment.id" from="${uk.ac.shu.webarch.eregister.Enrollment.list()}" optionKey="id" required="" value="${studentInstance?.enrollment?.id}" class="many-to-one"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'studentAddress', 'error')} ">
 	<label for="studentAddress">
 		<g:message code="student.studentAddress.label" default="Student Address" />

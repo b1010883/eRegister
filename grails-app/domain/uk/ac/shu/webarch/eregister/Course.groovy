@@ -1,15 +1,16 @@
 package uk.ac.shu.webarch.eregister
 
 class Course {
+//creating the properties in the class
 String name
 String courseCode
-Long courseNumber
-Date startDate
 
+//the classes this course is teaching
 Set courseClasses
 
-	static hasMany=[courseClasses:RegClass]
-	static mappedBy=[courseClasses:'course']
+//Below is the relationship between this table and the other table
+	static hasMany=[courseClasses: RegClass]
+	static mappedBy=[courseClasses: 'course']
 
     static constraints = {
     }

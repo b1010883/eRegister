@@ -6,7 +6,6 @@ String studentName
 String studentAddress
 String studentTelephone
 
-Enrollment enrollment
 
 Set studentRegister
 Set enrolled

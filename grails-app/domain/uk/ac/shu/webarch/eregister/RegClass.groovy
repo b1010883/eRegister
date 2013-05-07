@@ -12,7 +12,7 @@ Set classRegister
 Set enrolled
 
 	static hasMany=[classRegister:RegistrationSheet, enrolled:Enrollment]
-	static mappedBy=[classRegister:'regClass', enrolled:regClass]
+	static mappedBy=[classRegister:'regClass', enrolled:'regClass']
 
     static constraints = {
     }
